@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  section {
+    border: 2px solid rgba(38, 35, 35, 0.588);
+    border-radius: 10px;
+    min-width: 688px;
+    padding: 1rem;
+  }
+}
+
+
+
+input {
+  border: 0;
+  outline: none;
+  font-size: 18px;
+}
+
+.input {
+    font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+}
+
+ul:has(:not(.heading)){
+  padding-left: 1.3rem;
+ 
+}
+
+.heading {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  list-style: none;
+  padding-left: 0;
+}
+
+.select {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  select {
+    border: 0;
+    outline: none;
+    font-size: 18px;
+  }
+}
