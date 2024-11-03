@@ -9,6 +9,10 @@
   padding: 1rem;
 }
 
+.mainTitle {
+  color: #929292;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -16,48 +20,75 @@
   gap: 2rem;
   position: relative;
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 2px solid rgba(38, 35, 35, 0.588);
     border-radius: 10px;
     min-width: 688px;
     padding: 1rem;
+    min-height: 320px;
+    row-gap: 1rem;
+    background-color: #191b20;
+
+    .listEditors {
+      flex-grow: 1;
+    }
   }
 }
 
-
-
-input {
-  border: 0;
-  outline: none;
-  font-size: 18px;
-}
-
-.input {
-    font-size: 28px;
+.inputSlide {
+  font-size: 24px;
   font-weight: bold;
   width: 100%;
+  background-color: transparent;
+  color: white;
 }
 
-ul:has(:not(.heading)){
+ul:has(:not(.heading)) {
   padding-left: 1.3rem;
- 
+  margin-left: 1.3rem;
 }
 
 .heading {
   width: 100%;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  list-style: none;
+  position: relative;
+  right: 2.6rem;
+  list-style-type: none;
+}
+.heading input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
   padding-left: 0;
 }
 
-.select {
+.selectContainer {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  select {
-    border: 0;
+  .select {
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><polygon points="0,0 10,0 5,5" fill="%23007BFF"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    transition: border-color 0.3s ease;
+  }
+
+  .select:focus {
     outline: none;
-    font-size: 18px;
+    border-color: #0056b3;
+  }
+
+  .select option {
+    padding: 10px;
   }
 }

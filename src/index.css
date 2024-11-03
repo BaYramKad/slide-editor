@@ -6,6 +6,24 @@
 
 body {
   font-family: system-ui;
+  background-color: #424242;
+}
+input {
+  border: 0;
+  outline: none;
+  font-size: 16px;
 }
 
+span {
+  color: #616161;
+}
 
+ul li input {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+}
+
+ul li::marker {
+  color: white;
+}

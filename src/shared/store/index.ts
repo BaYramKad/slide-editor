@@ -1,11 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { slideSlice } from '../../features/create-bulet'
+import { configureStore } from "@reduxjs/toolkit";
+import { slideSlice } from "./create-slide";
+import { buletSlice } from "./create-bulet";
 
 export const store = configureStore({
   reducer: {
-    slideData: slideSlice.reducer
+    slide: slideSlice.reducer,
+    bulet: buletSlice.reducer
   },
-})
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
