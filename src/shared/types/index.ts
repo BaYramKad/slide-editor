@@ -18,19 +18,8 @@ export interface IContentBlock {
   bulets: IBulet[];
 }
 
-export interface IBlockElements {
-  id: string;
-  heading: string;
-  bullets: IBulet[];
-}
 
 export interface ISlide {
   id: number;
   title: string;
-  content_blocks: IBlockElements[];
-}
-
-export interface SelectState {
-  isHeading: boolean;
-  currentBulet: IBulet[];
 }

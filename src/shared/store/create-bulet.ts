@@ -7,7 +7,7 @@ const initialState: IBuletMain = {
   isSelected: "",
   isEmptyBulets: false,
   bulets: [],
-  content_blocks: [],
+  content_blocks: []
 };
 
 export type IsSelectedBulet = "bulet" | "heading";
